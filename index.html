@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario DM Store</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img#logo{
+            height: 500px;
+            width: 500px;
+            position: center center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Pesquisa de opnião e sujestões de melhorias
+    </h1>
+
+    
+        <h2>De acordo com suas preferências em camisas de futebol, responda e preencha o formulário abaixo:</h2>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="xmas"><label for="xmas">Masculino</label>
+            <input type="radio" name="Sexo" id="xfem"> <label for="xfem">Feminino</label>
+        </fieldset>
+
+    <p> <label for="inome">Nome:</label>
+         <input type="text" name="nome" id="inome"> 
+    
+    </p>
+    <p>
+        <label for="iende">Endereço:</label>
+        <input type="text" name="Endereço" id="iende"> 
+    </p>
+    <p>
+        <label for="irua">Rua:</label>
+        <input type="text" name="Rua" id="irua">
+    </p>
+    <p>
+        <label for="icep">CEP:</label>
+        <input type="text" name="CEP" id="icep" maxlength="8">
+    </p>
+
+    
+        
+            <fieldset>
+                <legend>Qual seu departamento favorito em nossa loja?</legend>
+                <input type="checkbox" name="futebol" id="ifut"> <label for="ifut">Futebol</label> <br>
+                <input type="checkbox" name="Basquete" id="ibasq"> <label for="ibasq">Basquete</label> <br>
+                <input type="checkbox" name="meias" id="imeias"> <label for="imeias">Meias antiderrapntes</label> <br>
+                <input type="checkbox" name="short" id="ishort"> <label for="ishort">calções</label>
+            </fieldset>
+
+            <p>
+                <label for="itime">Qual clube é de sua preferência?</label> <br>
+                <select name="time" id="itime"> <br>
+                    <option value="" selected>---Escolha---</option> 
+
+                    <optgroup label="Argentina">
+                        <option value="Rac">Racing</option>
+                        <option value="Boca">Boca Jrs</option>
+                        <option value="River">River Plate</option>
+                        <option value="Estudiantes">Estudiantes</option>
+                         
+                    </optgroup>
+
+                    <optgroup label="Brasil">
+                        <option value="America">America MG</option>
+                        <option value="ABC">Abc</option>
+                        <option value="Atletico MG"> Atletico MG</option>
+                        <option value="Cap">Athletico PR</option>
+                        <option value="Bot">Botafogo</option>
+                        <option value="Bah">Bahia</option>
+                        <option value="Rbb">Red Bull Bragantino</option>
+                        <option value="Fla ">Flamengo</option>
+                        <option value="Pal">Palmeiras</option>
+                        <option value="Gre">Gremio</option>
+                        <option value="For">Fortaleza</option>
+                        <option value="Flu">Fluminense</option>
+                        <option value="Sao">São Paulo</option>
+                        <option value="Cui">Cuiaba</option>
+                        <option value="Inter">Internacional</option>
+                        <option value="Cru">Cruzeiro</option>
+                        <option value="Cor">Corinthians</option>
+                        <option value="Goi">Goias</option>
+                        <option value="Vas">Vasco</option>
+                        <option value="San">Santos</option>
+                        <option value="Coritiba">Coritiba</option>
+                    </optgroup>
+
+                    <optgroup label="Espanha">
+                        <option value="Real">Real Madrird</option>
+                        <option value="Girona">Girona</option>
+                        <option value="Barc">Barcelona</option>
+                        <option value="Atletico M">Atletico Madrid</option>
+                        <option value="Real sociedad">Real Sociedad</option>
+                        <option value="bilbao">Athletic Bilbao</option>
+                        <option value="Rayo ">Rayo Valencano</option>
+                        <option value="Betis">Betis</option>
+                        <option value="Oss">Ossassuna</option>
+                        <option value="Val">Valencia</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Villa">Villareal</option>
+
+
+                    </optgroup>
+
+                    <optgroup label="Inglaterra">
+                        <option value="City">Mancheter City</option>
+                        <option value="United">Manchester United</option>
+                        <option value="Liv ">Liverpool</option>
+                        <option value="Chel">Chelsea</option>
+                        <option value="Ars">Arsenal</option>
+                        <option value="Tott">Tottenhan</option>
+                        <option value="New ">New Castle</option>
+                        <option value="Ast">Aston Villa</option>
+                        <option value="West">West Ham</option>
+                        <option value="Ful">Fulham</option>
+                        <option value="Eve">Everton</option>
+                        <option value="Lei">Leicester</option>
+
+
+                    </optgroup>                 
+                                      
+
+                </select>
+            </p>
+
+            <p>
+                        
+                <legend>Seu modelo favorito?</legend>
+                <input type="checkbox" name="modelo" id="ijogador" checked><label for="ijogador">Jogador</label>
+                <input type="checkbox" name="modelo" id="itorcedor"> <label for="itorcedor">Torcedor</label>
+           
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+
+   
+
+
+    </form>
+    <p><img id="logo" src="imagens/logo dm-store.jpeg" alt=""></p>
+</body>
+</html>
